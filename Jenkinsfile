@@ -4,9 +4,9 @@ pipeline{
         
         stage('Installation'){
             steps{
-                sh 'apt install g++'
-                sh 'apt install libgtest-dev'
-                sh 'apt install cmake'
+                //sh 'apt install g++'
+                //sh 'apt install libgtest-dev'
+                //sh 'apt install cmake'
                 sh 'chmod +x ./googletest/SWEngProject/Linux-CBuild.sh'
                 sh './googletest/SWEngProject/Linux-CBuild.sh'
                 sh 'ls'
